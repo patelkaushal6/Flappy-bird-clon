@@ -22,6 +22,7 @@
     </div>
     <div><a href="#" class="text-white hover:text-gray-300">Privacy Policy</a></div>
   </div>
+
   <div class="container mx-auto px-4 py-8">
     <div class="flex flex-col lg:flex-row">
       <div class="lg:w-2/3"></div>
@@ -29,21 +30,40 @@
         <h1 class="text-2xl font-bold text-center mb-4">Flappy Bird</h1>
         <div class="game-container">
           <canvas id="game-canvas" width="380" height="780"></canvas>
+
           <div id="start-screen">
             <h2 class="text-2xl font-bold text-white">Flappy Bird</h2>
             <p class="text-white text-center mt-2">Click or press spacebar to flap</p>
             <div class="btn" id="start-button">Start Game</div>
           </div>
+
           <div id="game-over-screen">
             <h2 class="text-2xl font-bold text-white">Game Over</h2>
             <p class="text-white">Your Score: <span id="final-score">0</span></p>
             <div class="btn" id="restart-button">Play Again</div>
           </div>
         </div>
+
+        <!-- AdSense Code (outside game-container) -->
+        <div class="mt-6 text-center">
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6157880473912941"
+            crossorigin="anonymous"></script>
+          <ins class="adsbygoogle"
+            style="display:block"
+            data-ad-client="ca-pub-6157880473912941"
+            data-ad-slot="3949487288"
+            data-ad-format="auto"
+            data-full-width-responsive="true"></ins>
+          <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
+        </div>
+
         <div class="mt-4 text-center">
           <label for="color-picker" class="block text-white mb-2">Change Bird Color:</label>
           <input type="color" id="color-picker" value="#FF8C00" class="w-16 h-8 rounded border-none cursor-pointer" />
         </div>
+
         <p class="text-center mt-4">Play flappy bird here online for free...</p>
         <p class="text-center mt-4">Check the <a href="#" class="text-blue-400 hover:underline">blog</a> for more.</p>
         <p class="text-center mt-2">Site by <a href="#" class="text-blue-400">@mxmcd</a></p>
@@ -54,6 +74,7 @@
       </div>
     </div>
   </div>
+
   <audio id="bg-music" src="FlappyBirdbackgroundmusic.mp3" loop></audio>
   <script src="script.js"></script>
 </body>
