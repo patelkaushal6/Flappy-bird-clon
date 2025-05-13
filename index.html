@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flappy Bird Clone</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="navbar flex justify-between items-center p-4">
+    <div class="flex items-center">
+      <div class="logo text-white mr-8">FlappyBird</div>
+      <nav>
+        <ul class="flex space-x-6">
+          <li><a href="#" class="text-white hover:text-gray-300">Game</a></li>
+          <li><a href="#" class="text-white hover:text-gray-300">Leaderboard</a></li>
+          <li><a href="#" class="text-white hover:text-gray-300">Blog</a></li>
+          <li><a href="#" class="text-white hover:text-gray-300">About</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div><a href="#" class="text-white hover:text-gray-300">Privacy Policy</a></div>
+  </div>
+  <div class="container mx-auto px-4 py-8">
+    <div class="flex flex-col lg:flex-row">
+      <div class="lg:w-2/3"></div>
+      <div class="lg:w-1/3 bg-gray-800 p-6 rounded">
+        <h1 class="text-2xl font-bold text-center mb-4">Flappy Bird</h1>
+        <div class="game-container">
+          <canvas id="game-canvas" width="380" height="780"></canvas>
+          <div id="start-screen">
+            <h2 class="text-2xl font-bold text-white">Flappy Bird</h2>
+            <p class="text-white text-center mt-2">Click or press spacebar to flap</p>
+            <div class="btn" id="start-button">Start Game</div>
+          </div>
+          <div id="game-over-screen">
+            <h2 class="text-2xl font-bold text-white">Game Over</h2>
+            <p class="text-white">Your Score: <span id="final-score">0</span></p>
+            <div class="btn" id="restart-button">Play Again</div>
+          </div>
+        </div>
+        <div class="mt-4 text-center">
+          <label for="color-picker" class="block text-white mb-2">Change Bird Color:</label>
+          <input type="color" id="color-picker" value="#FF8C00" class="w-16 h-8 rounded border-none cursor-pointer" />
+        </div>
+        <p class="text-center mt-4">Play flappy bird here online for free...</p>
+        <p class="text-center mt-4">Check the <a href="#" class="text-blue-400 hover:underline">blog</a> for more.</p>
+        <p class="text-center mt-2">Site by <a href="#" class="text-blue-400">@mxmcd</a></p>
+        <div class="divider"></div>
+        <p class="text-center">Build your next site on <a href="#" class="text-blue-400">Val Town</a></p>
+        <div class="divider"></div>
+        <p class="text-center"><a href="#" class="text-blue-400">Play Static Chess</a></p>
+      </div>
+    </div>
+  </div>
+  <audio id="bg-music" src="FlappyBirdbackgroundmusic.mp3" loop></audio>
+  <script src="script.js"></script>
+</body>
+</html>
